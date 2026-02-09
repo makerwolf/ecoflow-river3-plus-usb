@@ -31,15 +31,17 @@ async def test_sensor_states(
     await hass.async_block_till_done()
     assert mock_config_entry.state is ConfigEntryState.LOADED
 
-    charge_state = hass.states.get("sensor.ecoflow_river_3_charge_level")
+    charge_state = hass.states.get("sensor.ecoflow_river_3_plus_charge_level")
     assert charge_state
     assert charge_state.state == "76"
 
-    total_load_state = hass.states.get("sensor.ecoflow_river_3_total_load")
+    total_load_state = hass.states.get("sensor.ecoflow_river_3_plus_output_power")
     assert total_load_state
     assert pytest.approx(float(total_load_state.state)) == 258.8
 
-    ac_input_state = hass.states.get("binary_sensor.ecoflow_river_3_ac_input_active")
+    ac_input_state = hass.states.get(
+        "binary_sensor.ecoflow_river_3_plus_ac_input_active"
+    )
     assert ac_input_state
     assert ac_input_state.state == "on"
 
@@ -53,7 +55,7 @@ async def test_entity_availability_recovery(
     await hass.config_entries.async_setup(mock_config_entry.entry_id)
     await hass.async_block_till_done()
 
-    state = hass.states.get("sensor.ecoflow_river_3_charge_level")
+    state = hass.states.get("sensor.ecoflow_river_3_plus_charge_level")
     assert state
     assert state.state == "76"
 
@@ -62,7 +64,7 @@ async def test_entity_availability_recovery(
     async_fire_time_changed(hass, future)
     await hass.async_block_till_done(wait_background_tasks=True)
 
-    state = hass.states.get("sensor.ecoflow_river_3_charge_level")
+    state = hass.states.get("sensor.ecoflow_river_3_plus_charge_level")
     assert state
     assert state.state == STATE_UNAVAILABLE
 
@@ -71,6 +73,6 @@ async def test_entity_availability_recovery(
     async_fire_time_changed(hass, future + timedelta(seconds=UPDATE_INTERVAL.seconds))
     await hass.async_block_till_done(wait_background_tasks=True)
 
-    state = hass.states.get("sensor.ecoflow_river_3_charge_level")
+    state = hass.states.get("sensor.ecoflow_river_3_plus_charge_level")
     assert state
     assert state.state == "75"
