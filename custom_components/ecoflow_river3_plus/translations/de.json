@@ -1,0 +1,70 @@
+{
+  "title": "EcoFlow River 3 Plus USB",
+  "config": {
+    "abort": {
+      "already_configured": "Das Gerät ist bereits eingerichtet",
+      "already_in_progress": "Ein Einrichtungsablauf läuft bereits",
+      "no_devices_found": "Keine kompatiblen Geräte gefunden"
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "no_hid_device": "Keine kompatible HID-Schnittstelle gefunden. Prüfe USB-Passthrough und Berechtigungen",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "device": "Gerät"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "ac_input_active": {
+        "name": "Netzeingang aktiv"
+      }
+    },
+    "sensor": {
+      "ac_draw": {
+        "name": "AC-Eingangsleistung"
+      },
+      "ac_load": {
+        "name": "AC-Ausgangsleistung"
+      },
+      "battery_temperature": {
+        "name": "Batterietemperatur"
+      },
+      "battery_time_remaining": {
+        "name": "Restlaufzeit (Entladen)"
+      },
+      "charge_level": {
+        "name": "Ladestand"
+      },
+      "dc_load": {
+        "name": "DC-Ausgangsleistung"
+      },
+      "remaining_charge_time": {
+        "name": "Restladezeit"
+      },
+      "solar_dc_draw": {
+        "name": "Solar/DC-Eingangsleistung"
+      },
+      "system_temperature": {
+        "name": "Systemtemperatur"
+      },
+      "total_draw": {
+        "name": "Eingangsleistung"
+      },
+      "total_load": {
+        "name": "Ausgangsleistung"
+      },
+      "usb_a_load": {
+        "name": "USB-A-Ausgangsleistung"
+      },
+      "usb_c_load": {
+        "name": "USB-C-Ausgangsleistung"
+      }
+    }
+  }
+}

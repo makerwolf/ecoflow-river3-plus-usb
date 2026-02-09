@@ -1,0 +1,23 @@
+{
+  "domain": "ecoflow_river3_plus",
+  "name": "EcoFlow River 3 Plus USB",
+  "version": "0.1.0",
+  "codeowners": ["@wolfganglienbacher"],
+  "config_flow": true,
+  "dependencies": ["usb"],
+  "documentation": "https://github.com/makerwolf/ecoflow-river3-plus-usb",
+  "issue_tracker": "https://github.com/makerwolf/ecoflow-river3-plus-usb/issues",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "quality_scale": "bronze",
+  "requirements": ["hidapi==0.15.0", "pyserial==3.5"],
+  "usb": [
+    {
+      "vid": "3746",
+      "pid": "FFFF",
+      "manufacturer": "*ecoflow*",
+      "description": "*river*",
+      "known_devices": ["EcoFlow River 3 Plus"]
+    }
+  ]
+}

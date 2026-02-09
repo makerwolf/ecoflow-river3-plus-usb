@@ -1,0 +1,69 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "already_in_progress": "[%key:common::config_flow::abort::already_in_progress%]",
+      "no_devices_found": "No compatible devices found"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "no_hid_device": "No compatible HID interface found. Check USB passthrough and permissions",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "device": "[%key:common::config_flow::data::device%]"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "ac_input_active": {
+        "name": "AC input active"
+      }
+    },
+    "sensor": {
+      "ac_draw": {
+        "name": "AC input power"
+      },
+      "ac_load": {
+        "name": "AC output power"
+      },
+      "battery_temperature": {
+        "name": "Battery temperature"
+      },
+      "battery_time_remaining": {
+        "name": "Discharge time remaining"
+      },
+      "charge_level": {
+        "name": "Charge level"
+      },
+      "dc_load": {
+        "name": "DC output power"
+      },
+      "remaining_charge_time": {
+        "name": "Charge time remaining"
+      },
+      "solar_dc_draw": {
+        "name": "Solar or DC input power"
+      },
+      "system_temperature": {
+        "name": "System temperature"
+      },
+      "total_draw": {
+        "name": "Input power"
+      },
+      "total_load": {
+        "name": "Output power"
+      },
+      "usb_a_load": {
+        "name": "USB-A output power"
+      },
+      "usb_c_load": {
+        "name": "USB-C output power"
+      }
+    }
+  }
+}

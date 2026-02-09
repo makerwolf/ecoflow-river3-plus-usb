@@ -1,0 +1,6 @@
+{
+  "name": "EcoFlow River 3 Plus USB",
+  "content_in_root": false,
+  "domains": ["ecoflow_river3_plus"],
+  "homeassistant": "2025.12.0"
+}
