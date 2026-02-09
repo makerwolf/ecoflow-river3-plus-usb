@@ -28,3 +28,10 @@ USB (serial + HID), without MQTT.
 
 - Proxmox VE host with Home Assistant OS VM
 - Bare-metal Home Assistant OS
+
+## Acknowledgments
+
+This integration is based on the excellent work in
+[`greyltc/r3pcomms`](https://github.com/greyltc/r3pcomms).
+Credit where credit is due: without that project, this would have required
+significantly more reverse engineering and development effort.
