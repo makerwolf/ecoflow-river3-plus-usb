@@ -2,7 +2,7 @@
   "domain": "ecoflow_river3_plus",
   "name": "EcoFlow River 3 Plus USB",
   "version": "0.1.0",
-  "codeowners": ["@wolfganglienbacher"],
+  "codeowners": ["@makerwolf"],
   "config_flow": true,
   "dependencies": ["usb"],
   "documentation": "https://github.com/makerwolf/ecoflow-river3-plus-usb",
