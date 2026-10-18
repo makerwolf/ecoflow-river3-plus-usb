@@ -219,8 +219,9 @@ class EcoflowRiver3ConfigFlow(ConfigFlow, domain=DOMAIN):
             unique_id = _generate_unique_id(selected_port)
             await self.async_set_unique_id(unique_id)
 
+            self._abort_if_unique_id_configured(updates=base_data)
+
             try:
-                self._abort_if_unique_id_configured(updates=base_data)
                 telemetry = await self._async_validate(connection)
             except EcoflowRiver3NoHidDeviceError as err:
                 _LOGGER.warning("Validation failed for %s: %s", selected_device, err)
