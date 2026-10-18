@@ -4,6 +4,8 @@
     "abort": {
       "already_configured": "Device is already configured",
       "already_in_progress": "A setup flow is already in progress",
+      "cannot_connect": "Failed to connect",
+      "no_hid_device": "No compatible HID interface found. Check USB passthrough and permissions",
       "no_devices_found": "No compatible devices found"
     },
     "error": {

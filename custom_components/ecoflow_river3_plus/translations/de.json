@@ -4,6 +4,8 @@
     "abort": {
       "already_configured": "Das Gerät ist bereits eingerichtet",
       "already_in_progress": "Ein Einrichtungsablauf läuft bereits",
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "no_hid_device": "Keine kompatible HID-Schnittstelle gefunden. Prüfe USB-Passthrough und Berechtigungen",
       "no_devices_found": "Keine kompatiblen Geräte gefunden"
     },
     "error": {
