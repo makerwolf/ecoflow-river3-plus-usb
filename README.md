@@ -99,6 +99,7 @@ This integration is based on the excellent reverse-engineering work in
 [`greyltc/r3pcomms`](https://github.com/greyltc/r3pcomms).
 Credit where credit is due — without that project this would have required
 significantly more effort.
+The upstream MIT license notice is reproduced in [NOTICE](NOTICE).
 
 ## 🤝 Contributing
 
